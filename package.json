@@ -1,0 +1,24 @@
+{
+  "name": "personal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Morgan Brunot <brunot.morgan@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^11.0.0",
+    "font-awesome": "^4.3.0",
+    "less": "^2.5.1",
+    "normalize.css": "^3.0.3",
+    "normalize.less": "^1.0.0",
+    "resume-cli": "^0.4.8"
+  },
+  "scripts": {
+    "watch": "catw -c 'lessc -' 'styles/*.less' -o static/bundle.css -v",
+    "build": "catw -c 'lessc -' 'styles/*.less' > static/bundle.css"
+  },
+  "devDependencies": {
+    "catw": "^1.0.1",
+    "watchify": "^3.3.0"
+  }
+}
